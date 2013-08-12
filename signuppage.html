@@ -1,6 +1,7 @@
  <!DOCTYPE html>
  	<html>
  		<head>
+		<title> Undecided </title>
 		<title> Far Away Friend </title>
  		<meta name="viewport" content="width=device-width, initial-scale=1">
          <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
@@ -8,38 +9,46 @@
          <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
  		<script src="js.jquery.js"></script>
  		<script src="js/bootstrap.min.js"></script>
-		<script type="text/javascript"></script>	
+		<script type="text/javascript">
+		function submittedForm(){ //Submits other form
+					alert("Thanks for joining!");
+				}
+		</script>	
 		
-		<script type="text/javascript"></script>
+		
 		<style type="text/css">
 			.ui-page{
 				background:url("http://cdn.wallwuzz.com/uploads/background-training-computer-weapons-backgrounds-desktop-wallpaper-wallpapers-array-wallwuzz-hd-wallpaper-1481.jpg") no-repeat;
 				background-size:cover;
 			}
 			img, object{
-			max-height:50%;
-			max-width:50%;
+			max-height:40%;
+			max-width:40%;
 		}	
+		
 		</style>
 
  		</head>
  		
  		<body>
 		
- 		<div data-role="page" id="form"> <!-- SIGNUP PART 1-->
 		
-		<header data-role="header">
-			<h1><img src="http://i.imgur.com/4dkBHsl.png"/></h1>
-					<a href="#" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
-		</header>	
-		
-		<div data-role="content" id="inputinfo">
+ 		<div data-role="page" id="form"> <!-- SIGNUP1 -->
+			<header data-role="header">
+				<h1><img src="http://i.imgur.com/4dkBHsl.png"/></h1>
+						<a href="#" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+			</header>	
+			<div data-role"header">
+			</div> <!-- END HEADER -->	
+			
+			<div data-role="content" id="inputinfo">
 				<font color="white">Name: </font><input type="text" id="name" data-mini="true"/>
 				<font color="white">Username:</font> <input type="text" id="username" data-mini="true"/>
 				<font color="white">Password:</font> <input type="text" id="password" data-mini="true"/>
 				<font color="white">Email: </font><input type="text" id="email" data-mini="true"/>
 				</br>
 				<a href="#form2" data-role="button" data-icon="arrow-r" data-mini="true">Next</a>
+			</div>
 			<div data-role="footer" data-position="fixed">
 				<nav data-role="navbar"> 
 					<ul>	
@@ -49,9 +58,14 @@
 					</ul> 
 			</div>
 		</div>
-			
 		
-		<div data-role="page" id="form2"> <!-- SIGNUP PART 2 -->
+		<div data-role="page" id="form2"> <!-- SIGNUP 2 -->
+			<header data-role="header">
+				<h1><img src="http://i.imgur.com/4dkBHsl.png"/></h1>
+						<a href="#" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+			</header>	
+			<div data-role"header">
+			</div> <!-- END HEADER -->	
 			<div data-role="content">
 				<fieldset data-role="controlgroup">
 					<font color="white">Gender:</font>
@@ -65,19 +79,25 @@
 				<font color="white">Country: </font><input type="text" id="country" data-mini="true"/>
 				</br>
 				<a href="#form" data-role="button" data-icon="arrow-l" data-mini="true">Back</a>
-				<a href="#form3" data-role="button" data-icon="arrow-r" data-mini="true">Next</a>
-				
-		<div data-role="footer" data-position="fixed">
-			<nav data-role="navbar"> 
-				<ul>	
-					<li><a href="#">Chat</a></li>
-					<li><a href="https://googledrive.com/host/0B-6IYDLon2fENGxMXzlpM29wR0E/InfoPage.html" data-icon="info">Info</a></li> 
-					<li><a href="#">Learn More</a></li> 
-				</ul> 
+				<a href="#form3" data-role="button" data-icon="arrow-r" data-mini="true">Next</a>	
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<nav data-role="navbar"> 
+					<ul>	
+						<li><a href="#">Chat</a></li>
+						<li><a href="https://googledrive.com/host/0B-6IYDLon2fENGxMXzlpM29wR0E/InfoPage.html" data-icon="info">Info</a></li> 
+						<li><a href="#">Learn More</a></li> 
+					</ul> 
 			</div>
 		</div>
 			
-		<div data-role="page" id="form3"> <!-- SIGNUP PART 3 -->
+		<div data-role="page" id="form3"> <!-- SIGNUP 3 -->
+			<header data-role="header">
+				<h1><img src="http://i.imgur.com/4dkBHsl.png"/></h1>
+						<a href="#" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+			</header>	
+			<div data-role"header">
+			</div> <!-- END HEADER -->		
 			<div data-role="content">
 				<font color="white">Topics interested in</font>
 				<input type="checkbox" id="health" data-mini="true"/><label for="health">Health & Wellness</label>
@@ -87,23 +107,23 @@
 					<font color="white">I want:</font>
 					<input type="radio" name="radio-choice" id="needhelp" value="choice-1" checked="checked" data-mini="true"/>
 					<label for="needhelp">To Learn More</label>
+
 					<input type="radio" name="radio-choice" id="give" value="choice-2"  data-mini="true"/>
 					<label for="give">To Help & Volunteer</label>
 				</fieldset>
 				</br>
 				<a href="#form2" data-role="button" data-icon="arrow-l" data-mini="true">Back</a>
-				<a href="#step1" type="button" id="submit" data-mini="true">Submit</a>
-				
-				<div data-role="footer" data-position="fixed">
-					<nav data-role="navbar"> 
-						<ul>	
-							<li><a href="#">Chat</a></li>
-							<li><a href="https://googledrive.com/host/0B-6IYDLon2fENGxMXzlpM29wR0E/InfoPage.html" data-icon="info">Info</a></li> 
-							<li><a href="#">Learn More</a></li> 
-						</ul> 
-				</div>
+				<!--<a href="#step1" type="button" id="submit" data-mini="true">Submit</a>--><input type="button" value="Submit" onclick="submittedForm();">Submit</a>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<nav data-role="navbar"> 
+					<ul>	
+						<li><a href="#">Chat</a></li>
+						<li><a href="https://googledrive.com/host/0B-6IYDLon2fENGxMXzlpM29wR0E/InfoPage.html" data-icon="info">Info</a></li> 
+						<li><a href="#">Learn More</a></li> 
+					</ul> 
 			</div>
 		</div>
-		
+
 		</body>
 	</html>
